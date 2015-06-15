@@ -1,0 +1,35 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<img src="http://i.imgur.com/V5oSw7w.jpg?1" class="img-responsive" alt="Team Photo">
+
+<div class="jumbotron">
+       
+    <h1>ATMAE at SIUC</h1>
+    <p class="lead">The student ATMAE chapter here at SIUC has the primary goal of attending (and winning)
+     the annual ATMAE robotics conference. We also Host the regional FIRST Robotics Tech Challenge.</p>
+    <p><a href="http://www.atmae.org/" class="btn btn-primary btn-lg">Learn more about ATMAE &raquo;</a></p>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>The Robot</h2>
+        <p>
+            More information on the robot we will be piloting at this years Robotics conference, AKA KitKat!
+        </p>
+        <p><a class="btn btn-default" @Html.ActionLink("Learn more >>", "Robot", "Home") </a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>The FIRST Competition</h2>
+
+        <p>All of the information regarding this years regional First Tech Challenge, including locations, and volunteer information!</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Learn more >>", "FIRST", "Home") </a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>The Club</h2>
+        <p>Our progess of the past few years, including past awards and current leadership positions.</p>
+        <p><a class="btn btn-default" @Html.ActionLink("Learn more >>", "Club", "Home") </a></p>
+    </div>
+</div>
